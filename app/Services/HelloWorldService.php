@@ -2,10 +2,13 @@
 
 namespace App\Services;
 
+use App\Models\User;
+use Illuminate\Database\Eloquent\Collection;
+
 class HelloWorldService
 {
-    public function get(): string
+    public function get(): Collection
     {
-        return 'Hello World!';
+        return User::get();
     }
 }
