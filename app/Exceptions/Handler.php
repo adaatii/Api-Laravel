@@ -46,6 +46,8 @@ class Handler extends ExceptionHandler
                 'message' => 'Sem resultados para sua pesquisa'
             ], Response::HTTP_NOT_FOUND);
         }
+
+        dd($e);
         parent::render($request, $e);
     }
 }
